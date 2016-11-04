@@ -3,7 +3,8 @@
 解决老项目数模转换格式问题
 
 旧：
-` ``- (instancetype)initWithDict:(NSDictionary *)dict{
+` ``
+- (instancetype)initWithDict:(NSDictionary *)dict{
 if(self = [super init]){
 self.aid=[dict objectForKey:@"id"];
 self.type=[dict objectForKey:@"type"];
@@ -11,7 +12,8 @@ self.privilege=[dict objectForKey:@"privilege"];
 
 }
 return self;
-}` ``
+}
+` ``
 
 新（yymodel样式）
 ` ``
@@ -22,6 +24,5 @@ return @{@"aid" : @"id",
 };
 }
 ` ``
-用法和VVDocumenter类似，扩展了mmm的操作
 
-# Goodbye World
+用法和VVDocumenter类似，扩展了mmm的操作
